@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+set -e
+
 ###
 # Get blocklist urls from firebog
 # Copy pihole urls to tmp file
@@ -8,7 +10,7 @@ get_urls(){
   printf "==============================\n"
   printf "Getting blocklist URLs to download \n"
   printf "==============================\n"
-  mkdir tmp
+  mkdir -p tmp
   curl -s https://v.firebog.net/hosts/lists.php?type=nocross -o tmp/urls.tmp
   cat list_urls/pihole.urls >> tmp/urls.tmp
   U=$(sort -u tmp/urls.tmp)
@@ -55,6 +57,13 @@ sort_masterlist(){
   sort -u tmp/list.domains > blocklist
 }
 
+###
+# Checkout dedicated branch for storing blocklist
+# Add blocklist
+# Amend previous commit with latest version
+# rebase on master so blocklist is always one commit above master
+# push to origin
+###
 save_list(){
   git checkout blocklist
   git add blocklist
