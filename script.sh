@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
-U=""
-
 ###
 # Get blocklist urls from firebog
 # Copy pihole urls to tmp file
 # Sort tmp file into $U
-# Delete tmp file
 ###
 get_urls(){
-  curl -s https://v.firebog.net/hosts/lists.php?type=nocross -o urls.tmp
-  cat list_urls/pihole.urls >> urls.tmp
-  U=$(sort -u urls.tmp)
-  rm -f urls.tmp
+  printf "==============================\n"
+  printf "Getting blocklist URLs to download \n"
+  printf "==============================\n"
+  mkdir tmp
+  curl -s https://v.firebog.net/hosts/lists.php?type=nocross -o tmp/urls.tmp
+  cat list_urls/pihole.urls >> tmp/urls.tmp
+  U=$(sort -u tmp/urls.tmp)
 }
 
 ###
@@ -23,7 +23,7 @@ get_lists(){
     printf "==============================\n"
     printf "Downloading $u \n"
     printf "==============================\n"
-    wget $u -O- >> list
+    wget $u -O- >> tmp/list.raw
   done
 }
 
@@ -37,12 +37,14 @@ get_lists(){
 # https://github.com/pi-hole/pi-hole/blob/master/gravity.sh#L333
 ###
 parse_domains(){
-  local source="${1}" destination="${2}"
+  printf "==============================\n"
+  printf "Parse list to domains only\n"
+  printf "==============================\n"
   
-  < ${source} awk -F '#' '{print $1}' | \
+  < tmp/list.raw awk -F '#' '{print $1}' | \
   awk -F '/' '{print $1}' | \
   awk '($1 !~ /^#/) { if (NF>1) {print $2} else {print $1}}' | \
-  sed -nr -e 's/\.{2,}/./g' -e '/\./p' >  ${destination}
+  sed -nr -e 's/\.{2,}/./g' -e '/\./p' >  tmp/list.domains
 }
 
 ###
@@ -50,14 +52,23 @@ parse_domains(){
 ###
 sort_masterlist(){
   printf "=== Sorting and extracting unique domains ===\n"
-  sort -u list.domains > list.sorted
+  sort -u tmp/list.domains > blocklist
+}
+
+save_list(){
+  git checkout blocklist
+  git add blocklist
+  git commit --amend -m "$(date +%d-%m-%Y_%H:%M -u) UTC"
+  git rebase master
+  git push --force
 }
 
 main(){
   get_urls
   get_lists
-  parse_domains list list.domains
+  parse_domains
   sort_masterlist
+  save_list
 }
 
 main
