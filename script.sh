@@ -11,7 +11,8 @@ get_urls(){
   echo "Getting blocklist URLs to download"
   echo "=============================="
   mkdir -p tmp
-  curl -s https://v.firebog.net/hosts/lists.php?type=nocross -o tmp/urls.tmp
+  #curl -s https://v.firebog.net/hosts/lists.php?type=nocross -o tmp/urls.tmp
+  curl -s https://v.firebog.net/hosts/lists.php?type=tick -o tmp/urls.tmp
   cat list_urls/pihole.urls >> tmp/urls.tmp
   U=$(sort -u tmp/urls.tmp)
 }
@@ -25,7 +26,7 @@ get_lists(){
     echo "=============================="
     echo "Downloading $u"
     echo "=============================="
-    wget $u -O- >> tmp/list.raw
+    wget $u -O- >> tmp/blocklist.raw
   done
 }
 
@@ -43,10 +44,10 @@ parse_domains(){
   echo "Parse list to domains only"
   echo "=============================="
   
-  < tmp/list.raw awk -F '#' '{print $1}' | \
+  < tmp/blocklist.raw awk -F '#' '{print $1}' | \
   awk -F '/' '{print $1}' | \
   awk '($1 !~ /^#/) { if (NF>1) {print $2} else {print $1}}' | \
-  sed -nr -e 's/\.{2,}/./g' -e '/\./p' >  tmp/list.domains
+  sed -nr -e 's/\.{2,}/./g' -e '/\./p' >  tmp/blocklist.domains
 }
 
 ###
@@ -56,7 +57,7 @@ sort_masterlist(){
   echo "=============================="
   echo "Sorting and extracting unique domains"
   echo "=============================="
-  sort -u tmp/list.domains > blocklist.new
+  sort -u tmp/blocklist.domains > tmp/blocklist
 }
 
 ###
@@ -69,7 +70,7 @@ sort_masterlist(){
 ###
 save_list(){
   git checkout blocklist
-  mv blocklist.new blocklist
+  mv tmp/blocklist blocklist
   git add blocklist
   git commit --amend -m "$(date +%d-%m-%Y_%H:%M -u) UTC"
   git rebase master
