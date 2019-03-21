@@ -56,11 +56,12 @@ sort_masterlist(){
   echo "=============================="
   echo "Sorting and extracting unique domains"
   echo "=============================="
-  sort -u tmp/list.domains > blocklist
+  sort -u tmp/list.domains > blocklist.new
 }
 
 ###
 # Checkout dedicated branch for storing blocklist
+# Overwrite old blocklist with new blocklist
 # Add blocklist
 # Amend previous commit with latest version
 # rebase on master so blocklist is always one commit above master
@@ -68,6 +69,7 @@ sort_masterlist(){
 ###
 save_list(){
   git checkout blocklist
+  mv blocklist.new blocklist
   git add blocklist
   git commit --amend -m "$(date +%d-%m-%Y_%H:%M -u) UTC"
   git rebase master
