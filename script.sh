@@ -77,6 +77,10 @@ save_list(){
   git push --force
 }
 
+clean_tmp(){
+  git clean -dfX
+}
+
 main(){
   get_urls
   get_lists
