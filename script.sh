@@ -7,9 +7,9 @@ set -e
 # Sort tmp file into $U
 ###
 get_urls(){
-  printf "==============================\n"
-  printf "Getting blocklist URLs to download \n"
-  printf "==============================\n"
+  echo "=============================="
+  echo "Getting blocklist URLs to download"
+  echo "=============================="
   mkdir -p tmp
   curl -s https://v.firebog.net/hosts/lists.php?type=nocross -o tmp/urls.tmp
   cat list_urls/pihole.urls >> tmp/urls.tmp
@@ -22,9 +22,9 @@ get_urls(){
 ###
 get_lists(){
   for u in $U; do
-    printf "==============================\n"
-    printf "Downloading $u \n"
-    printf "==============================\n"
+    echo "=============================="
+    echo "Downloading $u"
+    echo "=============================="
     wget $u -O- >> tmp/list.raw
   done
 }
@@ -39,9 +39,9 @@ get_lists(){
 # https://github.com/pi-hole/pi-hole/blob/master/gravity.sh#L333
 ###
 parse_domains(){
-  printf "==============================\n"
-  printf "Parse list to domains only\n"
-  printf "==============================\n"
+  echo "=============================="
+  echo "Parse list to domains only"
+  echo "=============================="
   
   < tmp/list.raw awk -F '#' '{print $1}' | \
   awk -F '/' '{print $1}' | \
@@ -53,7 +53,9 @@ parse_domains(){
 # Sort and extract unique domains
 ###
 sort_masterlist(){
-  printf "=== Sorting and extracting unique domains ===\n"
+  echo "=============================="
+  echo "Sorting and extracting unique domains"
+  echo "=============================="
   sort -u tmp/list.domains > blocklist
 }
 
