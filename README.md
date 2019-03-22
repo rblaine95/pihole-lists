@@ -4,5 +4,5 @@ list.
 This means that my Pi-Hole only pulls a single list whenever it updates instead of
 around 60.  
 
-* [Blocklist Raw](https://raw.githubusercontent.com/rblaine95/pihole-lists/blocklist/blocklist)
+* [Download](https://raw.githubusercontent.com/rblaine95/pihole-lists/blocklist/blocklist)
 
