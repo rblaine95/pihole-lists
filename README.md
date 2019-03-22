@@ -5,5 +5,4 @@ This means that my Pi-Hole only pulls a single list whenever it updates instead 
 around 60.  
 
 * [Blocklist Raw](https://raw.githubusercontent.com/rblaine95/pihole-lists/blocklist/blocklist)
-* [Blocklist LFS](https://media.githubusercontent.com/media/rblaine95/pihole-lists/blocklist/blocklist)
 
