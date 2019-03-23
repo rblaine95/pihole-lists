@@ -70,9 +70,10 @@ sort_masterlist(){
 ###
 save_list(){
   git checkout blocklist
+  git reset --soft HEAD~1
   mv tmp/blocklist blocklist
   git add blocklist
-  git commit --amend -m "$(date +%d-%m-%Y_%H:%M -u) UTC"
+  git commit -m "$(date +%d-%m-%Y_%H:%M -u) UTC"
   git rebase master
   git push --force
 }
