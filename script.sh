@@ -93,6 +93,7 @@ main(){
   parse_domains
   sort_masterlist
   save_list
+  clean_tmp
 }
 
 main
