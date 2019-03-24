@@ -10,7 +10,7 @@ get_urls(){
   echo "=============================="
   echo "Getting blocklist URLs to download"
   echo "=============================="
-  mkdir -p tmp
+  mkdir -p tmp mirror
   #curl -s https://v.firebog.net/hosts/lists.php?type=nocross -o tmp/urls.tmp
   curl -s https://v.firebog.net/hosts/lists.php?type=tick -o tmp/urls.tmp
   cat list_urls/pihole.urls >> tmp/urls.tmp
@@ -22,12 +22,15 @@ get_urls(){
 # Download list into single file
 ###
 get_lists(){
+  i=0
   for u in $U; do
     echo "=============================="
     echo "Downloading $u"
     echo "=============================="
-    wget $u -O- >> tmp/blocklist.raw
+    wget "$u" -O- > mirror/list.${i}
+    i=$((i+1))
   done
+  cat mirror/* | sort -u > tmp/blocklist.raw
 }
 
 ###
@@ -72,7 +75,7 @@ save_list(){
   git checkout blocklist
   git reset --soft HEAD~1
   mv tmp/blocklist blocklist
-  git add blocklist
+  git add blocklist mirror/
   git commit -m "$(date +%d-%m-%Y_%H:%M -u) UTC"
   git rebase master
   git push --force
