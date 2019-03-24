@@ -6,3 +6,6 @@ around 60.
 
 * [Download](https://raw.githubusercontent.com/rblaine95/pihole-lists/blocklist/blocklist)
 
+The `blocklist` branch contains the consolidated 'master' `blocklist` file in the Pihole Domains format.  
+The `blocklist` branch also contains a `mirror` directory - this directory contains all of the individual blocklists downloaded in their original format.
+
