@@ -20,7 +20,7 @@ get_urls(){
 
 ###
 # For each URL in $U
-# Download list into single file
+# Download list and save into tmp/
 ###
 get_lists(){
   i=0
@@ -31,54 +31,45 @@ get_lists(){
     wget "$u" -O- > tmp/list.${i}
     i=$((i+1))
   done
-  cat tmp/list.* > tmp/blocklist.raw
 }
 
 ###
-# I'm a little ashamed that I copy-pasted this from pihole -g
-# This little function here will:
-# Remove all comments, trailing '/', and IP addresses
-# Returning only the domains
-# Seriously, full credit for this function right here goes to the guys and gals
-# over at Pi-Hole
-# https://github.com/pi-hole/pi-hole/blob/master/gravity.sh#L333
+# For each blocklist in `tmp/`
+# generate github raw url pointing to the list in `mirror/`
+# and add the list url to a plaintext file
+# for copy-paste add to pihole
 ###
-parse_domains(){
-  echo "=============================="
-  echo "Parse list to domains only"
-  echo "=============================="
-  
-  < tmp/blocklist.raw awk -F '#' '{print $1}' | \
-  awk -F '/' '{print $1}' | \
-  awk '($1 !~ /^#/) { if (NF>1) {print $2} else {print $1}}' | \
-  sed -nr -e 's/\.{2,}/./g' -e '/\./p' >  tmp/blocklist.domains
-}
-
-###
-# Sort and extract unique domains
-###
-sort_masterlist(){
-  echo "=============================="
-  echo "Sorting and extracting unique domains"
-  echo "=============================="
-  sort -u tmp/blocklist.domains > tmp/blocklist
+compile_list(){
+  # https://raw.githubusercontent.com/$USER/$REPO/$BRANCH/$DIR/$FILE
+  user=$(git remote get-url --all origin | cut -f 2 -d":" | cut -f 1 -d"." | cut -f 1 -d"/")
+  repo=$(git remote get-url --all origin | cut -f 2 -d":" | cut -f 1 -d"." | cut -f 2 -d"/")
+  for u in $(find tmp/list.* | cut -f 2 -d"/" | sort -t . -k 2 -g); do
+    echo "https://raw.githubusercontent.com/${user}/${repo}/blocklist/mirror/${u}" >> tmp/adlists.list
+  done
 }
 
 ###
 # Checkout dedicated branch for storing blocklist
-# Overwrite old blocklist with new blocklist
-# Add blocklist
 # Amend previous commit with latest version
 # rebase on master so blocklist is always one commit above master
 # push to origin
 ###
 save_list(){
+  msg="$(date +%d-%m-%Y_%H:%M -u) UTC"
+  
+  # adlists.list lives in master branch
+  git checkout master
+  mv tmp/adlists.list adlists.list
+  git add adlists.list
+  git commit -m "${msg}"
+  git push
+  
+  # actual lists lives in blocklist branch
   git checkout blocklist
   git reset --soft HEAD~1
-  mv tmp/blocklist blocklist
-  mv tmp/list.* mirror
-  git add blocklist mirror/
-  git commit -m "$(date +%d-%m-%Y_%H:%M -u) UTC"
+  mv tmp/list.* mirror/
+  git add mirror/
+  git commit -m "${msg}"
   git rebase master
   git push --force
 }
@@ -90,10 +81,9 @@ clean_tmp(){
 main(){
   get_urls
   get_lists
-  parse_domains
-  sort_masterlist
-  save_list
-  clean_tmp
+  compile_list
+  # save_list
+  # clean_tmp
 }
 
 main
