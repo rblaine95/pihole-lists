@@ -1,9 +1,3 @@
-#  Last Update: Thu Apr 11 11:57:44 EDT 2019
-#  
-#  sbl-dg-ads: Squidguard or Dansguardian compatible - blacklist compiled by squidblacklist.org.      -Made In USA-
-#  
-#  You may freely use, copy, and redistribute this blacklist in any manner you like.
-#  
 0icep80f.com
 118-oew-181.mktoresp.com
 123date.me
@@ -32,6 +26,7 @@
 360ads.com
 360adstrack.com
 360installer.com
+360popads.com
 360yield.com
 365sbaffiliates.com
 3cinteractive.com
@@ -77,11 +72,11 @@ a.aproductmsg.com
 aarki.com
 aax.amazon-adsystem.com
 aax-cpm.amazon-adsystem.com
+aax-us-east.amazon-adsystem.com
 abacho.net
 abc-ads.com
 abletomeet.com
 abramarketing.com
-absoluteclickscom.com
 abum.com
 a.c0594.com
 acamar.xyz
@@ -121,6 +116,7 @@ ad2games.com
 ad2.iinfo.cz
 ad2.lupa.cz
 ad2up.com
+ad.360yield.com
 ad3.eu
 ad3.iinfo.cz
 ad3.pamedia.com.au
@@ -196,6 +192,7 @@ ad.cgi.cz
 adchap.com
 ad-check.disconnect.me
 adchemical.com
+ad.cibleclick.com
 adcito.com
 adclickafrica.com
 adclick.com
@@ -219,6 +216,7 @@ ad.cooks.com
 adcore.ua
 adcrax.com
 adcron.com
+ad.crwdcntrl.net
 adcycle.com
 addash.co
 ad-delivery.net
@@ -232,6 +230,7 @@ add.newmedia.cz
 ad.doctissimo.fr
 addoer.com
 ad.domainfactory.de
+ad.doubleclick.net
 addroid.com
 ad.duga.jp
 addynamo.net
@@ -299,7 +298,6 @@ adhitzads.com
 ad.hodomobile.com
 adhood.com
 adhost.dk
-adhref.com
 adicate.com
 ad.ics-int.com
 adigniter.org
@@ -379,6 +377,7 @@ adlink.wf
 ad.lionmobi.com
 ad.liveburst.com
 ad.liveinternet.ru
+ad.lkqd.net
 ad.lmtw.com
 adlog.com.com
 adloox.com
@@ -403,6 +402,7 @@ admarketplace.com
 admarketplace.net
 admarvel.com
 admarvel.s3.amazonaws.com
+admaster.biz
 admaster.net
 ad-maven.com
 admax.eu
@@ -562,6 +562,7 @@ ads.aceweb.net
 ads.activestate.com
 ads.adadapted.com
 ads.adamoads.com
+ads.adaptv.advertising.com
 ads.adcorps.com
 ads.adextrem.com
 ads.adfox.ru
@@ -653,6 +654,7 @@ ads.co.com
 ads.com
 ads.com.com
 ads.contactmusic.com
+ads.contextweb.com
 adscpm.net
 ads.creativematch.com
 ads.cricbuzz.com
@@ -943,6 +945,7 @@ ads.pro-market.net
 ads.property.com.au
 adspruce.com
 ads.psd2html.com
+ads.pubmatic.com
 ads.pushplay.com
 adspynet.com
 ads.quoka.de
@@ -956,6 +959,7 @@ ads.renren.com
 ads.resoom.de
 ads-rm.looksmart.com
 ads.rottentomatoes.com
+ads.rubiconproject.com
 ads.rugbyamateur.fr
 ads.ruralpress.com
 adsrv.deviantart.com
@@ -964,6 +968,7 @@ ad-srv.net
 adsrvr.org
 adsrv.us
 ads.scifi.com
+ads.scorecardresearch.com
 ads.secureserver.net
 ads.seniorfriendfinder.com
 ads.sexier.com
@@ -981,6 +986,7 @@ ads.speedfinancial.online
 ads.sptimes.com
 ads.stackoverflow.com
 adsstat.com
+ads.stickyadstv.com
 ads.sublimedirectory.com
 ads.sun.com
 ads.sunmaker.com
@@ -1053,6 +1059,7 @@ ads.xtra.co.nz
 ads.xxxad.net
 ads.y-0.net
 ads.yahoo.com
+ads.yieldmo.com
 ads.yimg.com
 ads.yldmgrimg.net
 adsymptotic.com
@@ -1085,6 +1092,7 @@ adtrieval.com
 adtrix.com
 adtrue.com
 adtruth.com
+ad.turn.com
 ad.tv2.no
 adtwirl.com
 ad.twitchguru.com
@@ -1333,7 +1341,6 @@ applovin.com
 appnext.com
 appnexus.com
 appolicious.com
-apportium.com
 app-promo.com
 appredeem.com
 approstar.com
@@ -1548,7 +1555,6 @@ bidclix.com
 bidgear.com
 bidswitch.net
 bidtheatre.com
-bidtrk.com
 bidverdrd.com
 bidvertiser.com
 biemedia.com
@@ -1630,6 +1636,7 @@ bruceleadx3.com
 bruceleadx4.com
 bruceleadx.com
 bsch.serving-sys.com
+bs.serving-sys.com
 bs.yandex.ru
 bttrack.com
 bu520.com
@@ -1723,6 +1730,7 @@ city-ads.de
 cityadspix.com
 cityads.telus.net
 citygrid.com
+citysite.net
 cj.com
 cjlog.com
 ck.thrillbucks.com
@@ -1741,6 +1749,7 @@ click2paid.com
 click4free.info
 clickability.com
 clickable.com
+click.absoluteagency.com
 clickad.pl
 clickadz.com
 clickagents.com
@@ -1932,6 +1941,7 @@ datawrkz.com
 dataxu.com
 dating-banners.com
 datinggold.com
+dbg52463.moatads.com
 dc-storm.com
 de17a.com
 deanmediagroup.com
@@ -2085,6 +2095,7 @@ ergoledo.com
 erniphiq.com
 ero-advertising.com
 erovation.com
+escalatenetwork.com
 escokuro.com
 esellerate.net
 essayads.com
@@ -2115,7 +2126,6 @@ exitexplosion.com
 exoclick.com
 exogripper.com
 experteerads.com
-explainidentifycoding.info
 expocrack.com
 expogrim.com
 exponential.com
@@ -2549,7 +2559,6 @@ kissmetrics.com
 kitnmedia.com
 kkddlt2f.site
 kliks.nl
-klonedaset.org
 knowd.com
 komoona.com
 kontextua.com
@@ -2565,7 +2574,6 @@ lakequincy.com
 la-la-moon.com
 la-la-sf.com
 landelcut.com
-langosh.biz
 lanistaads.com
 lanistaconcepts.com
 larentisol.com
@@ -2579,7 +2587,6 @@ layer-ad.de
 layer-ad.org
 lbn.ru
 lcl2adserver.com
-ld82ydd.com
 lead-analytics.nl
 leadboltads.net
 leadbolt.com
@@ -2786,10 +2793,8 @@ mixtraffic.com
 mkhoj.com
 ml314.com
 mlm.de
-mmadsgadget.com
 mmaglobal.com
 mmedia.com
-mmgads.com
 mmo123.co
 mmotraffic.com
 mmtro.com
@@ -3431,6 +3436,7 @@ saymedia.com
 sba.about.co.kr
 sbaffiliates.com
 sbcpower.com
+sbl.wmk
 sbx.pagesjaunes.fr
 scambiobanner.aruba.it
 scanmedios.com
@@ -3443,9 +3449,11 @@ scrap.me
 scratch2cash.com
 scriptall.gq
 scriptall.tk
+search123.uk.com
 searchmarketing.com
 seccoads.com
 secondstreetmedia.com
+secure.adnxs.com
 secure-ds.serving-sys.com
 secure.eagletribune.com
 secure-msntest.serving-sys.com
@@ -3670,6 +3678,7 @@ tacticalrepublic.com
 tag.1rx.io
 taggify.net
 tagjunction.com
+tags-cdn.deployads.com
 tagular.com
 tailsweep.com
 tailsweep.se
@@ -3679,7 +3688,6 @@ tapad.com
 tapgen.com
 tapit.com
 tapjoyads.com
-tapsense.com
 targad.de
 targetingnow.com
 targetpoint.com
@@ -3738,6 +3746,7 @@ tokenads.com
 tollfreeforwarding.com
 tomekas.com
 tonefuse.com
+tool-site.com
 top100-images.rambler.ru
 top100.mafia.ru
 top100.rambler.ru
@@ -3775,6 +3784,7 @@ touchads.com
 touchclarity.com
 tour.brazzers.com
 tpnads.com
+tr533.com
 traceadmanager.com
 track.176.com
 track.360tracking.fr
@@ -3810,7 +3820,6 @@ track.clubheshe.com
 track.clubvaniity.com
 track.club-vaniity.net
 track.crowmobi.com
-track.crumobiapps.com
 track.dannixxx.com
 track.datingagencyapp.com
 track.ddfadventures.com
@@ -4149,6 +4158,7 @@ vacwrite.com
 vadpay.com
 validclick.com
 valuead.com
+valueaffiliate.net
 valueclick.com
 valueclickmedia.com
 valuecommerce.com
