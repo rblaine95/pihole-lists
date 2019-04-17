@@ -21,8 +21,8 @@ Blocklist of hostnames and domains for blocking ads, trackers and others (format
 #
 # For more information about this list, see: https://pgl.yoyo.org/adservers/
 # ----
-# last updated:   Wed, 10 Apr 2019 14:09:21 GMT
-# entries:        2958
+# last updated:   Tue, 16 Apr 2019 13:17:16 GMT
+# entries:        2960
 # format:         hosts (hosts -- in hosts file format)
 # credits:        Peter Lowe - pgl@yoyo.org - https://pgl.yoyo.org/ - https://twitter.com/pgl
 # this URL:       https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts;showintro=0
@@ -30,7 +30,7 @@ Blocklist of hostnames and domains for blocking ads, trackers and others (format
 # other formats:  https://pgl.yoyo.org/adservers/formats.php
 # policy:         https://pgl.yoyo.org/adservers/policy.php
 #
-# start date:    Wed, 21 Apr 1999 00:00:00
+# start date:    Thu, 22 Apr 1999 00:00:00
 127.0.0.1 101com.com
 127.0.0.1 101order.com
 127.0.0.1 123found.com
@@ -1725,6 +1725,7 @@ Blocklist of hostnames and domains for blocking ads, trackers and others (format
 127.0.0.1 hotrank.com.tw
 127.0.0.1 hoverowl.com
 127.0.0.1 hs-analytics.net
+127.0.0.1 hsadspixel.net
 127.0.0.1 htmlhubing.xyz
 127.0.0.1 httpool.com
 127.0.0.1 hurricanedigitalmedia.com
@@ -1832,6 +1833,7 @@ Blocklist of hostnames and domains for blocking ads, trackers and others (format
 127.0.0.1 justicejudo.com
 127.0.0.1 justpremium.com
 127.0.0.1 justrelevant.com
+127.0.0.1 justuno.com
 127.0.0.1 k.iinfo.cz
 127.0.0.1 kanoodle.com
 127.0.0.1 kargo.com
