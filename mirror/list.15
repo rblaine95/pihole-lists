@@ -21,8 +21,8 @@ Blocklist of hostnames and domains for blocking ads, trackers and others (format
 #
 # For more information about this list, see: https://pgl.yoyo.org/adservers/
 # ----
-# last updated:   Wed, 17 Apr 2019 08:50:09 GMT
-# entries:        2962
+# last updated:   Thu, 18 Apr 2019 13:20:47 GMT
+# entries:        2970
 # format:         hosts (hosts -- in hosts file format)
 # credits:        Peter Lowe - pgl@yoyo.org - https://pgl.yoyo.org/ - https://twitter.com/pgl
 # this URL:       https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts;showintro=0
@@ -30,7 +30,7 @@ Blocklist of hostnames and domains for blocking ads, trackers and others (format
 # other formats:  https://pgl.yoyo.org/adservers/formats.php
 # policy:         https://pgl.yoyo.org/adservers/policy.php
 #
-# start date:    Fri, 23 Apr 1999 00:00:00
+# start date:    Sat, 24 Apr 1999 00:00:00
 127.0.0.1 101com.com
 127.0.0.1 101order.com
 127.0.0.1 123found.com
@@ -774,6 +774,7 @@ Blocklist of hostnames and domains for blocking ads, trackers and others (format
 127.0.0.1 adserverplus.com
 127.0.0.1 adserverpub.com
 127.0.0.1 adserversolutions.com
+127.0.0.1 adservice.google.com
 127.0.0.1 adserving.unibet.com
 127.0.0.1 adservinginternational.com
 127.0.0.1 adsfac.eu
@@ -1181,6 +1182,7 @@ Blocklist of hostnames and domains for blocking ads, trackers and others (format
 127.0.0.1 calculatingtoothbrush.com
 127.0.0.1 calculatorcamera.com
 127.0.0.1 callousbrake.com
+127.0.0.1 callrail.com
 127.0.0.1 calmfoot.com
 127.0.0.1 campaign.bharatmatrimony.com
 127.0.0.1 caniamedia.com
@@ -1660,6 +1662,7 @@ Blocklist of hostnames and domains for blocking ads, trackers and others (format
 127.0.0.1 gorgeousground.com
 127.0.0.1 gossipmiser.com
 127.0.0.1 gostats.com
+127.0.0.1 gotraffic.net
 127.0.0.1 gp.dejanews.com
 127.0.0.1 gracefulsock.com
 127.0.0.1 grandioseguide.com
@@ -1940,6 +1943,7 @@ Blocklist of hostnames and domains for blocking ads, trackers and others (format
 127.0.0.1 matchcraft.com
 127.0.0.1 matheranalytics.com
 127.0.0.1 mathtag.com
+127.0.0.1 mautic.com
 127.0.0.1 max.i12.de
 127.0.0.1 maximiser.net
 127.0.0.1 maximumcash.com
@@ -1999,6 +2003,7 @@ Blocklist of hostnames and domains for blocking ads, trackers and others (format
 127.0.0.1 microstatic.pl
 127.0.0.1 microticker.com
 127.0.0.1 militaryverse.com
+127.0.0.1 minewhat.com
 127.0.0.1 minormeeting.com
 127.0.0.1 misstrends.com
 127.0.0.1 mixedreading.com
@@ -2223,6 +2228,7 @@ Blocklist of hostnames and domains for blocking ads, trackers and others (format
 127.0.0.1 photographpan.com
 127.0.0.1 phpadsnew.new.natuurpark.nl
 127.0.0.1 phpmyvisites.net
+127.0.0.1 pi.pardot.com
 127.0.0.1 picadmedia.com
 127.0.0.1 piet2eix3l.com
 127.0.0.1 pietexture.com
@@ -2530,6 +2536,7 @@ Blocklist of hostnames and domains for blocking ads, trackers and others (format
 127.0.0.1 smetrics.ctv.ca
 127.0.0.1 smetrics.foxnews.com
 127.0.0.1 smetrics.walgreens.com
+127.0.0.1 smetrics.washingtonpost.com
 127.0.0.1 smilingwaves.com
 127.0.0.1 snakesort.com
 127.0.0.1 snapads.com
@@ -2562,6 +2569,7 @@ Blocklist of hostnames and domains for blocking ads, trackers and others (format
 127.0.0.1 sponsors.thoughtsmedia.com
 127.0.0.1 spot.fitness.com
 127.0.0.1 spottysense.com
+127.0.0.1 spotx.tv
 127.0.0.1 spotxchange.com
 127.0.0.1 springaftermath.com
 127.0.0.1 spurioussteam.com
