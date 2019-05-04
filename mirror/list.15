@@ -21,8 +21,8 @@ Blocklist of hostnames and domains for blocking ads, trackers and others (format
 #
 # For more information about this list, see: https://pgl.yoyo.org/adservers/
 # ----
-# last updated:   Mon, 29 Apr 2019 13:07:29 GMT
-# entries:        2971
+# last updated:   Fri, 03 May 2019 16:04:09 GMT
+# entries:        2964
 # format:         hosts (hosts -- in hosts file format)
 # credits:        Peter Lowe - pgl@yoyo.org - https://pgl.yoyo.org/ - https://twitter.com/pgl
 # this URL:       https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts;showintro=0
@@ -30,7 +30,7 @@ Blocklist of hostnames and domains for blocking ads, trackers and others (format
 # other formats:  https://pgl.yoyo.org/adservers/formats.php
 # policy:         https://pgl.yoyo.org/adservers/policy.php
 #
-# start date:    Sat, 08 May 1999 00:00:00
+# start date:    Sun, 09 May 1999 00:00:00
 127.0.0.1 101com.com
 127.0.0.1 101order.com
 127.0.0.1 123found.com
@@ -319,6 +319,7 @@ Blocklist of hostnames and domains for blocking ads, trackers and others (format
 127.0.0.1 admob.com
 127.0.0.1 admonitor.com
 127.0.0.1 admotion.com.ar
+127.0.0.1 adn.lrb.co.uk
 127.0.0.1 adnet.asahi.com
 127.0.0.1 adnet.biz
 127.0.0.1 adnet.de
@@ -914,7 +915,6 @@ Blocklist of hostnames and domains for blocking ads, trackers and others (format
 127.0.0.1 afftracking.justanswer.com
 127.0.0.1 afterview.ru
 127.0.0.1 agkn.com
-127.0.0.1 agreeableprice.com
 127.0.0.1 agreeablestew.com
 127.0.0.1 agreemand.com
 127.0.0.1 ah-ha.com
@@ -1238,7 +1238,6 @@ Blocklist of hostnames and domains for blocking ads, trackers and others (format
 127.0.0.1 class-act-clicks.com
 127.0.0.1 clearcomb.com
 127.0.0.1 clevernt.com
-127.0.0.1 click.absoluteagency.com
 127.0.0.1 click.fool.com
 127.0.0.1 click.kmindex.ru
 127.0.0.1 click2freemoney.com
@@ -1261,7 +1260,6 @@ Blocklist of hostnames and domains for blocking ads, trackers and others (format
 127.0.0.1 clicks.mods.de
 127.0.0.1 clickserve.cc-dt.com
 127.0.0.1 clicksor.com
-127.0.0.1 clicktag.de
 127.0.0.1 clickthruserver.com
 127.0.0.1 clickthrutraffic.com
 127.0.0.1 clicktrace.info
@@ -1713,7 +1711,6 @@ Blocklist of hostnames and domains for blocking ads, trackers and others (format
 127.0.0.1 hits.puls.lv
 127.0.0.1 hits.theguardian.com
 127.0.0.1 hits4me.com
-127.0.0.1 hits4pay.com
 127.0.0.1 hitslink.com
 127.0.0.1 hittail.com
 127.0.0.1 hollandbusinessadvertising.nl
@@ -1774,7 +1771,6 @@ Blocklist of hostnames and domains for blocking ads, trackers and others (format
 127.0.0.1 incentaclick.com
 127.0.0.1 inclk.com
 127.0.0.1 incognitosearches.com
-127.0.0.1 incrediblesugar.com
 127.0.0.1 indexstats.com
 127.0.0.1 indexww.com
 127.0.0.1 indieclick.com
@@ -2085,7 +2081,6 @@ Blocklist of hostnames and domains for blocking ads, trackers and others (format
 127.0.0.1 netdirect.nl
 127.0.0.1 netincap.com
 127.0.0.1 netmng.com
-127.0.0.1 netpool.netbookia.net
 127.0.0.1 netshelter.net
 127.0.0.1 neudesicmediagroup.com
 127.0.0.1 newads.bangbros.com
@@ -2689,7 +2684,6 @@ Blocklist of hostnames and domains for blocking ads, trackers and others (format
 127.0.0.1 temelio.com
 127.0.0.1 tendertest.com
 127.0.0.1 terriblethumb.com
-127.0.0.1 terribleturkey.com
 127.0.0.1 text-link-ads.com
 127.0.0.1 textad.sexsearch.com
 127.0.0.1 textads.biz
@@ -2962,7 +2956,6 @@ Blocklist of hostnames and domains for blocking ads, trackers and others (format
 127.0.0.1 xovq5nemr.com
 127.0.0.1 xplusone.com
 127.0.0.1 xponsor.com
-127.0.0.1 xq1.net
 127.0.0.1 xtendmedia.com
 127.0.0.1 xtremetop100.com
 127.0.0.1 xxxcounter.com
