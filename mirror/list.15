@@ -21,8 +21,8 @@ Blocklist of hostnames and domains for blocking ads, trackers and others (format
 #
 # For more information about this list, see: https://pgl.yoyo.org/adservers/
 # ----
-# last updated:   Fri, 03 May 2019 16:04:09 GMT
-# entries:        2964
+# last updated:   Mon, 06 May 2019 14:44:57 GMT
+# entries:        2965
 # format:         hosts (hosts -- in hosts file format)
 # credits:        Peter Lowe - pgl@yoyo.org - https://pgl.yoyo.org/ - https://twitter.com/pgl
 # this URL:       https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts;showintro=0
@@ -30,7 +30,7 @@ Blocklist of hostnames and domains for blocking ads, trackers and others (format
 # other formats:  https://pgl.yoyo.org/adservers/formats.php
 # policy:         https://pgl.yoyo.org/adservers/policy.php
 #
-# start date:    Tue, 11 May 1999 00:00:00
+# start date:    Wed, 12 May 1999 00:00:00
 127.0.0.1 101com.com
 127.0.0.1 101order.com
 127.0.0.1 123found.com
@@ -2472,6 +2472,7 @@ Blocklist of hostnames and domains for blocking ads, trackers and others (format
 127.0.0.1 selectionsugar.com
 127.0.0.1 selectivesummer.com
 127.0.0.1 sendmepixel.com
+127.0.0.1 sendpulse.com
 127.0.0.1 sensismediasmart.com.au
 127.0.0.1 separatesilver.com
 127.0.0.1 serv0.com
